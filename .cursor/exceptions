@@ -1,0 +1,11 @@
+# Cursor Exceptions — Do NOT Edit These Files
+
+Cursor should never modify or delete the following:
+- `Info.plist`
+- `Assets.xcassets/` (images, app icon, brand color set)
+- `.env` or `Config.swift` (contains keys)
+- `GoogleService-Info.plist`
+- `StreamedHire.xcodeproj/` or project settings
+- Any API or secret key strings
+- Any user data or credential files
+- The `.git/` folder or `.cursor/` folder itself

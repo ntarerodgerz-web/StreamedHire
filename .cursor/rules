@@ -1,0 +1,41 @@
+# Streamed Hire App — Cursor Rules
+
+Streamed Hire is a SwiftUI-based job marketplace app that connects job seekers (Candidates) and employers (Clients).
+
+### 🧠 App Purpose
+- Candidates can search, view, and apply for jobs.
+- Clients can create and post job listings.
+- Both roles can sign up, log in, and manage profiles.
+
+### 🧱 Tech Stack
+- SwiftUI + UIKit
+- Firebase or Supabase for backend (database + auth)
+- Git + GitHub for version control
+- Cursor AI for assisted development
+
+### 🎨 Design
+- Primary color: **BrandColor** = #007ACC (blue)
+- Clean, minimalist SwiftUI UI
+- Logo file: `icon_transparent.png` or `icon.jpeg`
+
+### 🧭 Role-Based Behavior
+- When signing up, users choose a **role**: Candidate or Client.
+- On login:
+  - **Candidate:** sees “Jobs”, “Applications”, “Profile”.
+  - **Client:** sees “Post a Job”, “Jobs”, “Profile”.
+- Role is stored in backend and remembered between sessions.
+
+### 📦 Project Structure Highlights
+- `StreamedHireApp.swift` → entry point  
+- `LandingView.swift` / `ContentView.swift` → home navigation hub  
+- `SignInView.swift` / `CreateAccountView.swift` → auth flow  
+- `ProfileView.swift`, `JobsView.swift`, `JobDetailView.swift`, `JobPostView.swift`, `ApplicationsView.swift`, etc.  
+- `.cursor/` → rules and exceptions  
+
+### 🧩 Cursor Editing Guidelines
+- Follow SwiftUI best practices.
+- Preserve all existing navigation and file organization.
+- Respect `.cursor/exceptions` list (no edits there).
+- Always show diffs before applying edits.
+- Use `Color("BrandColor")` for all primary accents.
+- Do not expose secret keys or credentials.
